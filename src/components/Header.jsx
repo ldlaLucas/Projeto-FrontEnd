@@ -1,3 +1,6 @@
+
+import "../styles.css"; 
+import "../variables.css";
 import React from "react";
 import { TabMenu } from "primereact/TabMenu";
 import { InputText } from "primereact/inputtext";
@@ -11,23 +14,25 @@ import "primereact/resources/primereact.min.css"; // Estilos globais do PrimeRea
 import "primeicons/primeicons.css"; // Biblioteca de ícones PrimeIcons
 import "primeflex/primeflex.css"; // Classes utilitárias PrimeFlex
 
-// Importação da logo
+// Importação da logo 
 import logo from "../assets/logo-header.svg";
+import Navbar from "./NavBar";
 
 const Header = () => {
   // Configuração dos itens da barra de navegação
-  const navItems = [
-    { label: "Home", command: () => (window.location.href = "/home") },
-    { label: "Produtos", command: () => (window.location.href = "/produtos") },
-    { label: "Categorias", command: () => (window.location.href = "/categorias") },
-    { label: "Meus Pedidos", command: () => (window.location.href = "/meus-pedidos") },
-  ];
+  // const navItems = [
+  //   { label: "Home", command: () => (window.location.href = "/home") },
+  //   { label: "Produtos", command: () => (window.location.href = "/produtos") },
+  //   { label: "Categorias", command: () => (window.location.href = "/categorias") },
+  //   { label: "Meus Pedidos", command: () => (window.location.href = "/meus-pedidos") },
+  // ];
 
   // Lado esquerdo: Botão "Cadastre-se"
   const singUp = (
     <Button
       label="Cadastre-se"
       text
+      class="button dark-gray-3"
       onClick={() => {}}
     />
   );
@@ -37,13 +42,14 @@ const Header = () => {
       label="Entrar"
       raised
       className="p-button-sm p-button-sm"
+      class = "button-primary"
       onClick={() => {}}
     />
   );
 
   const carrinho = (
-      <i
-      class="pi pi-cart-plus"
+      <InputIcon
+      className="pi pi-cart-plus"
       onClick={() => {}}
     />
   );
@@ -53,11 +59,7 @@ const Header = () => {
     <img
       src={logo}
       alt="Logo"
-      style={{
-        width: "253px",
-        height: "44px",
-        margin: "8px",
-      }}
+      class="logo"
     />
   );
 
@@ -65,23 +67,20 @@ const Header = () => {
   const pesquisa = (
     <>
       <IconField>
-        <InputIcon className="pi pi-search 8px"> </InputIcon>
+        <InputIcon className="pi pi-search pi-search cursor:pointer"> </InputIcon>
         <InputText       
-          placeholder="Pesquisar produtos"
-          style={{
-            width: "559px",
-            height: "60px",
-            margin: "8px"
-        }}/>
+          placeholder="  Pesquisar produtos..."
+          class = "pesquisarProdutos"
+        />
         
       </IconField>
     </>
   );
 
   return (
-      <header>
+    <header className="overflow-hidden px-5">
       {/* Linha superior: Botão à esquerda, pesquisa no meio, logo à direita */}
-      <div className="flex flex-row justify-content-around align-items-center p-py-4px p-px-4px">
+      <div className="flex flex-row justify-content-between align-items-center p-py-4px p-px-4px">
         {start} {/* Logo */}
         {pesquisa} {/* Caixa de pesquisa */}
         {singUp} {/* Botão "Cadastre-se" */}
@@ -90,7 +89,9 @@ const Header = () => {
       </div>
 
       {/* Linha inferior: Barra de navegação */}
-      <TabMenu model={navItems} />
+      {/* <TabMenu model={navItems} />
+       */}
+       <Navbar />
     </header>
   );
 };

@@ -1,3 +1,4 @@
+import "../styles.css"
 import React from "react";
 import "primereact/resources/themes/mira/theme.css"; // Tema Lara Dark Gray
 import "primereact/resources/primereact.min.css"; // Estilos globais do PrimeReact
@@ -11,7 +12,6 @@ const Footer = () => {
   return (
     <footer
       className="flex flex-row justify-content-evenly align-content-center flex-wrap p-px-4px"
-      style={{ backgroundColor: "#2c2c2c", color: "#fff",  height:"454px" }}
     >
       {/* Lado esquerdo */}
       <div className="p-d-flex p-flex-column p-ai-start" style={{ width: "20%" }}>
@@ -19,11 +19,7 @@ const Footer = () => {
         <img
           src={logo}
           alt="Logo"
-          style={{
-            width: "253px",
-            height: "44px",
-            marginBottom: "8px",
-          }}
+          class="logo"
         />
         {/* Lorem Ipsum */}
         <p style={{ marginBottom: "10px" }}>
