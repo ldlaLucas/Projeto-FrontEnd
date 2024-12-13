@@ -13,6 +13,28 @@ header{
     width: 1440px;
     height: 192px;
 }
+
+ul{
+   list-style-type: none;
+   padding: 0
+}
+
+h3,p{
+    margin-bottom: 10px;
+}
+
+.w-20{
+    width: 20%;
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+    .RdSocial{
+        font-size: 1.5rem; 
+        cursor: pointer; 
+    }
     .logo{
             width: 253px;
             height: 44px;

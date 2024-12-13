@@ -10,11 +10,9 @@ import logo from "../assets/logo-footer.svg";
 
 const Footer = () => {
   return (
-    <footer
-      className="flex flex-row justify-content-evenly align-content-center flex-wrap p-px-4px"
-    >
+    <footer className="flex flex-row justify-content-evenly align-content-center flex-wrap p-px-4px" >
       {/* Lado esquerdo */}
-      <div className="p-d-flex p-flex-column p-ai-start" style={{ width: "20%" }}>
+      <div className="p-d-flex p-flex-column p-ai-start w-20">
         {/* Logo */}
         <img
           src={logo}
@@ -22,54 +20,45 @@ const Footer = () => {
           class="logo"
         />
         {/* Lorem Ipsum */}
-        <p style={{ marginBottom: "10px" }}>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
         </p>
         {/* Ícones de Redes Sociais */}
-        <div className="p-d-flex">
-          <i
-            className="pi pi-facebook p-mr-3"
-            style={{ fontSize: "1.5rem", cursor: "pointer" }}
-          ></i>
-          <i
-            className="pi pi-instagram p-mr-3"
-            style={{ fontSize: "1.5rem", cursor: "pointer" }}
-          ></i>
-          <i
-            className="pi pi-twitter"
-            style={{ fontSize: "1.5rem", cursor: "pointer" }}
-          ></i>
+        <div className="flex flex-row">
+          <i className="RdSocial pi pi-facebook p-mr-3" />
+          <i className="RdSocial pi pi-instagram p-mr-3" />
+          <i className="RdSocial pi pi-twitter" />
         </div>
       </div>
 
       {/* Centro esquerda */}
-      <div className="p-d-flex p-flex-column p-ai-start" style={{ width: "20%" }}>
-        <h3 style={{ marginBottom: "10px" }}>Informações</h3>
-        <ul style={{ listStyleType: "none", padding: 0 }}>
-          <li style={{ marginBottom: "5px" }}>Sobre Drip Store</li>
-          <li style={{ marginBottom: "5px" }}>Segurança</li>
-          <li style={{ marginBottom: "5px" }}>Wishlist</li>
-          <li style={{ marginBottom: "5px" }}>Blog</li>
-          <li style={{ marginBottom: "5px" }}>Trabalhe conosco</li>
-          <li style={{ marginBottom: "5px" }}>Meus Pedidos</li>
+      <div className="p-d-flex p-flex-column p-ai-start w-20" >
+        <h3 >Informações</h3>
+        <ul>
+          <li>Sobre Drip Store</li>
+          <li>Segurança</li>
+          <li>Wishlist</li>
+          <li>Blog</li>
+          <li>Trabalhe conosco</li>
+          <li>Meus Pedidos</li>
         </ul>
       </div>
 
       {/* Centro direita */}
-      <div className="p-d-flex p-flex-column p-ai-start" style={{ width: "20%" }}>
-        <h3 style={{ marginBottom: "10px" }}>Categorias</h3>
-        <ul style={{ listStyleType: "none", padding: 0 }}>
-          <li style={{ marginBottom: "5px" }}>Tecnologia</li>
-          <li style={{ marginBottom: "5px" }}>Moda</li>
-          <li style={{ marginBottom: "5px" }}>Esportes</li>
-          <li style={{ marginBottom: "5px" }}>Casa</li>
-          <li style={{ marginBottom: "5px" }}>Beleza</li>
+      <div className="p-d-flex p-flex-column p-ai-start w-20" >
+        <h3>Categorias</h3>
+        <ul>
+          <li>Tecnologia</li>
+          <li>Moda</li>
+          <li>Casa</li>
+          <li>Esportes</li>
+          <li>Beleza</li>
         </ul>
       </div>
 
       {/* Lado direito */}
-      <div className="p-d-flex p-flex-column p-ai-start" style={{ width: "20%" }}>
-        <h3 style={{ marginBottom: "10px" }}>Contato</h3>
+      <div className="p-d-flex p-flex-column p-ai-start w-20">
+        <h3>Contato</h3>
         <p>
           Email: contato@exemplo.com
           <br />
