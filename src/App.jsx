@@ -4,17 +4,19 @@
 // import Header from "./components/Header";
 // import Footer from "./components/Footer";
 // import Gallery from "./components/gallery/Gallery";
-
-import HomePage from "./pages/HomePage";
-
-
+import React from 'react';
+// import ProductCard from './components/ProductCard';
+import HomePage from './pages/HomePage';
+import ProductListinPage from './pages/ProductListinPage';
 
 const App = () => {
-      return ( 
-            <>                
-                 <HomePage />
-            </>
-       );
-}
- 
+
+  return (
+   <>
+      {/* <HomePage /> */}
+      <ProductListinPage />
+   </>
+  );
+};
+
 export default App;
