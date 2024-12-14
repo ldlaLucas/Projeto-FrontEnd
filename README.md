@@ -21,7 +21,7 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 2. Navegue até o diretório do projeto:
    ```bash
-   cd loja-virtual
+   cd Projeto-FrontEnd
    ```
 
 3. Instale as dependências:
