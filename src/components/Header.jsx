@@ -1,11 +1,10 @@
-
-import "../styles.css"; 
+import "../styles.css";
 import "../variables.css";
 import React from "react";
 import { TabMenu } from "primereact/TabMenu";
 import { InputText } from "primereact/inputtext";
-import { IconField } from 'primereact/iconfield';
-import { InputIcon } from 'primereact/inputicon';
+import { IconField } from "primereact/iconfield";
+import { InputIcon } from "primereact/inputicon";
 import { Button } from "primereact/button";
 
 // Importação de estilos do PrimeReact
@@ -14,7 +13,7 @@ import "primereact/resources/primereact.min.css"; // Estilos globais do PrimeRea
 import "primeicons/primeicons.css"; // Biblioteca de ícones PrimeIcons
 import "primeflex/primeflex.css"; // Classes utilitárias PrimeFlex
 
-// Importação da logo 
+// Importação da logo
 import logo from "../assets/logo-header.svg";
 import Navbar from "./NavBar";
 
@@ -38,41 +37,31 @@ const Header = () => {
   );
 
   const login = (
-      <Button
+    <Button
       label="Entrar"
       raised
       className="p-button-sm p-button-sm"
-      class = "button-primary"
+      class="button-primary"
       onClick={() => {}}
     />
   );
 
-  const carrinho = (
-      <InputIcon
-      className="pi pi-cart-plus"
-      onClick={() => {}}
-    />
-  );
+  const carrinho = <InputIcon className="pi pi-cart-plus" onClick={() => {}} />;
 
   // Lado direito: Logo
-  const start = (
-    <img
-      src={logo}
-      alt="Logo"
-      class="logo"
-    />
-  );
+  const start = <img src={logo} alt="Logo" class="logo" />;
 
   // Caixa de pesquisa no centro
   const pesquisa = (
     <>
       <IconField>
-        <InputIcon className="pi pi-search pi-search cursor:pointer"> </InputIcon>
-        <InputText       
+        <InputIcon className="pi pi-search pi-search cursor:pointer">
+          {" "}
+        </InputIcon>
+        <InputText
           placeholder="  Pesquisar produtos..."
-          class = "pesquisarProdutos"
+          class="pesquisarProdutos"
         />
-        
       </IconField>
     </>
   );
@@ -91,7 +80,7 @@ const Header = () => {
       {/* Linha inferior: Barra de navegação */}
       {/* <TabMenu model={navItems} />
        */}
-       <Navbar />
+      <Navbar />
     </header>
   );
 };

@@ -19,11 +19,11 @@ const Products = [
     priceDiscount: 89.9,
   },
   {
-      name: "Produto 4",
-      image: "../src/assets/products/produc-image-4.jpeg",
-      price: 100,
-      priceDiscount: 89.9,
-    },
+    name: "Produto 4",
+    image: "../src/assets/products/produc-image-4.jpeg",
+    price: 100,
+    priceDiscount: 89.9,
+  },
 ];
 
 const ProductListinPage = () => {

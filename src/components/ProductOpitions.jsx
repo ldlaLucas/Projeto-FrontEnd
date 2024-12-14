@@ -1,8 +1,5 @@
 const ProductOpitions = () => {
-      return ( 
-            <>
-            </>
-       );
-}
- 
-export default ProductOpitions ;
+  return <></>;
+};
+
+export default ProductOpitions;

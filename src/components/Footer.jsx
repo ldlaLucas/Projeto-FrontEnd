@@ -1,4 +1,4 @@
-import "../styles.css"
+import "../styles.css";
 import React from "react";
 import "primereact/resources/themes/mira/theme.css"; // Tema Lara Dark Gray
 import "primereact/resources/primereact.min.css"; // Estilos globais do PrimeReact
@@ -10,18 +10,15 @@ import logo from "../assets/logo-footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-row justify-content-evenly align-content-center flex-wrap p-px-4px" >
+    <footer className="flex flex-row justify-content-evenly align-content-center flex-wrap p-px-4px">
       {/* Lado esquerdo */}
       <div className="p-d-flex p-flex-column p-ai-start w-20">
         {/* Logo */}
-        <img
-          src={logo}
-          alt="Logo"
-          class="logo"
-        />
+        <img src={logo} alt="Logo" class="logo" />
         {/* Lorem Ipsum */}
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum.
         </p>
         {/* Ícones de Redes Sociais */}
         <div className="flex flex-row">
@@ -32,8 +29,8 @@ const Footer = () => {
       </div>
 
       {/* Centro esquerda */}
-      <div className="p-d-flex p-flex-column p-ai-start w-20" >
-        <h3 >Informações</h3>
+      <div className="p-d-flex p-flex-column p-ai-start w-20">
+        <h3>Informações</h3>
         <ul>
           <li>Sobre Drip Store</li>
           <li>Segurança</li>
@@ -45,7 +42,7 @@ const Footer = () => {
       </div>
 
       {/* Centro direita */}
-      <div className="p-d-flex p-flex-column p-ai-start w-20" >
+      <div className="p-d-flex p-flex-column p-ai-start w-20">
         <h3>Categorias</h3>
         <ul>
           <li>Tecnologia</li>

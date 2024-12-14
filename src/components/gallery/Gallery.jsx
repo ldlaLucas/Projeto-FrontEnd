@@ -1,10 +1,17 @@
 // src/components/Gallery/Gallery.jsx
-import React, { useState } from 'react';
-import './Gallery.css';
-import fleft from '../../assets/icons/arrow-left.svg';
-import fRight from '../../assets/icons/arrow-right.svg';
+import React, { useState } from "react";
+import "./Gallery.css";
+import fleft from "../../assets/icons/arrow-left.svg";
+import fRight from "../../assets/icons/arrow-right.svg";
 
-const Gallery = ({ className = '', width = '100%', height = 'auto', radius = '0px', showThumbs, images = [] }) => {
+const Gallery = ({
+  className = "",
+  width = "100%",
+  height = "auto",
+  radius = "0px",
+  showThumbs,
+  images = [],
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -59,7 +66,7 @@ const Gallery = ({ className = '', width = '100%', height = 'auto', radius = '0p
               src={image.src}
               alt={`Thumbnail ${index + 1}`}
               className={`gallery-thumbnail ${
-                currentIndex === index ? 'selected' : ''
+                currentIndex === index ? "selected" : ""
               }`}
               style={{ borderRadius: radius }}
               onClick={() => selectSlide(index)}

@@ -1,8 +1,5 @@
 const ProductCard = () => {
-      return ( 
-            <>
-            </>
-       );
-}
- 
-export default ProductCard ;
+  return <></>;
+};
+
+export default ProductCard;

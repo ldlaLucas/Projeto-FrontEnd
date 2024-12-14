@@ -1,8 +1,5 @@
 const Section = () => {
-      return ( 
-            <>
-            </>
-       );
-}
- 
-export default Section ;
+  return <></>;
+};
+
+export default Section;

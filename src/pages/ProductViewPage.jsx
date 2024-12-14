@@ -1,8 +1,5 @@
 const ProductViewPage = () => {
-      return ( 
-            <>
-            </>
-       );
-}
- 
+  return <></>;
+};
+
 export default ProductViewPage;
