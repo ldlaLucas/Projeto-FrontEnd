@@ -64,7 +64,7 @@ const Footer = () => {
           <br />
           Telefone: (11) 1234-5678
           <br />
-          Endereço: Rua Exemplo, 123, São Paulo, SP
+          Endereço: Rua Exemplo, 123, Cidade, Estado
         </p>
       </div>
     </footer>
