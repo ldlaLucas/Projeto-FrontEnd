@@ -12,22 +12,22 @@ const Gallery = ({
   showThumbs,
   images = [],
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [Imagem, setImagem] = useState(0);
 
   const nextSlide = () => {
-    if (currentIndex < images.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+    if (Imagem < images.length - 1) {
+      setImagem(Imagem + 1);
     }
   };
 
   const prevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+    if (Imagem > 0) {
+      setImagem(Imagem - 1);
     }
   };
 
   const selectSlide = (index) => {
-    setCurrentIndex(index);
+    setImagem(index);
   };
 
   return (
@@ -36,22 +36,22 @@ const Gallery = ({
       <div className="gallery-slide">
         {images.length > 0 && (
           <img
-            src={images[currentIndex].src}
-            alt={`Slide ${currentIndex + 1}`}
+            src={images[Imagem].src}
+            alt={`Slide ${Imagem + 1}`}
             className="gallery-image"
           />
         )}
         <button
           className="gallery-arrow gallery-arrow-left"
           onClick={prevSlide}
-          disabled={currentIndex === 0}
+          disabled={Imagem === 0}
         >
           <img src={fleft} alt="Previous" />
         </button>
         <button
           className="gallery-arrow gallery-arrow-right"
           onClick={nextSlide}
-          disabled={currentIndex === images.length - 1}
+          disabled={Imagem === images.length - 1}
         >
           <img src={fRight} alt="Next" />
         </button>
@@ -66,7 +66,7 @@ const Gallery = ({
               src={image.src}
               alt={`Thumbnail ${index + 1}`}
               className={`gallery-thumbnail ${
-                currentIndex === index ? "selected" : ""
+                Imagem === index ? "selected" : ""
               }`}
               style={{ borderRadius: radius }}
               onClick={() => selectSlide(index)}

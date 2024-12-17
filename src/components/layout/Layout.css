@@ -1,0 +1,31 @@
+/* Variáveis de cores */
+@import '../../variables.css';
+
+/* Estilos para o layout principal */
+.layout {
+  height: 100vh;
+  background-color: var(--color-gray-light-3);
+}
+
+/* Header */
+.layout-header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Conteúdo principal */
+.layout-main {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--color-white);
+}
+
+/* Footer */
+.layout-footer {
+  background-color: var(--color-gray-dark-2);
+  color: var(--color-white);
+  padding: 10px;
+  text-align: center;
+}

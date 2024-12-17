@@ -7,12 +7,14 @@
 import React from "react";
 // import ProductCard from './components/ProductCard';
 import HomePage from "./pages/HomePage";
-import ProductListinPage from "./pages/ProductListinPage";
+
+
 
 const App = () => {
   return (
     <>
       <HomePage />
+      
     </>
   );
 };

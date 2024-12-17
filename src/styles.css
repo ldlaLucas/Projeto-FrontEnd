@@ -74,7 +74,7 @@ li{
 .navbar {
     display: flex;
     justify-content: left;
-    background-color: white; /* Use sua variável ou cor fixa */
+    background-color: white; 
     
 }
 
@@ -94,19 +94,19 @@ li{
     padding: 32px 0 0 0;
     cursor: pointer;
     color: var(--dark-gray);
-    border-bottom: 1px solid transparent; /* Define a linha inicial como invisível */
+    border-bottom: 1px solid transparent; 
     transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 /* Efeito ao passar o mouse */
 .navbar-item:hover {
-    color: var(--primary); /* Cor ao passar o mouse */
+    color: var(--primary);
 }
 
 /* Aba ativa */
 .navbar-item.active {
-    color: var(--primary); /* Cor ativa */
-    border-bottom: 2px solid var(--primary); /* Linha inferior ativa */
+    color: var(--primary); 
+    border-bottom: 2px solid var(--primary);
 }
 
 footer{ 
