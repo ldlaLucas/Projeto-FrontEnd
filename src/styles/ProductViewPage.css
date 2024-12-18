@@ -1,0 +1,64 @@
+/* BuyBox */
+.buy-box {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid var(--light-gray-3);
+  border-radius: 8px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.buy-box-name {
+  font-size: 32px;
+  color: var(--dark-gray);
+  margin: 0;
+}
+
+.buy-box-reference {
+  font-size: 12px;
+  color: var(--dark-gray-3);
+}
+
+.buy-box-reviews {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buy-box-stars {
+  background-color: var(--warning);
+  color: var(--white);
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.buy-box-price {
+  font-size: 32px;
+  color: var(--dark-gray-2);
+}
+
+.buy-box-price-original {
+  font-size: 16px;
+  color: var(--light-gray-2);
+  text-decoration: line-through;
+}
+
+.buy-box-button {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--warning);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-box-button:hover {
+  background-color: #d49418;
+}

@@ -1,37 +1,30 @@
-import "../styles.css";
+import "../styles/Footer.css";
 import React from "react";
-import "primereact/resources/themes/mira/theme.css"; // Tema Lara Dark Gray
-import "primereact/resources/primereact.min.css"; // Estilos globais do PrimeReact
+import "primereact/resources/themes/lara-light-indigo/theme.css"; // Tema do PrimeReact
 import "primeicons/primeicons.css"; // Biblioteca de ícones PrimeIcons
-import "primeflex/primeflex.css"; // Classes utilitárias PrimeFlex
-
-// Importação da logo
+import "primeflex/primeflex.css"; // PrimeFlex
 import logo from "../assets/logo-footer.svg";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-row justify-content-evenly align-content-center flex-wrap p-px-4px">
-      {/* Lado esquerdo */}
-      <div className="p-d-flex p-flex-column p-ai-start w-20">
-        {/* Logo */}
-        <img src={logo} alt="Logo" class="logo" />
-        {/* Lorem Ipsum */}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          lacinia odio vitae vestibulum.
+    <footer className="footer-container">
+      {/* Lado Esquerdo */}
+      <div className="footer-section logo-section">
+        <img src={logo} alt="Logo" className="footer-logo" />
+        <p className="footer-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
         </p>
-        {/* Ícones de Redes Sociais */}
-        <div className="flex flex-row">
-          <i className="RdSocial pi pi-facebook p-mr-3" />
-          <i className="RdSocial pi pi-instagram p-mr-3" />
-          <i className="RdSocial pi pi-twitter" />
+        <div className="social-icons">
+          <i className="pi pi-facebook social-icon" />
+          <i className="pi pi-instagram social-icon" />
+          <i className="pi pi-twitter social-icon" />
         </div>
       </div>
 
-      {/* Centro esquerda */}
-      <div className="p-d-flex p-flex-column p-ai-start w-20">
-        <h3>Informações</h3>
-        <ul>
+      {/* Coluna Informações */}
+      <div className="footer-section">
+        <h3 className="footer-title">Informações</h3>
+        <ul className="footer-list">
           <li>Sobre Drip Store</li>
           <li>Segurança</li>
           <li>Wishlist</li>
@@ -41,28 +34,32 @@ const Footer = () => {
         </ul>
       </div>
 
-      {/* Centro direita */}
-      <div className="p-d-flex p-flex-column p-ai-start w-20">
-        <h3>Categorias</h3>
-        <ul>
-          <li>Tecnologia</li>
-          <li>Moda</li>
-          <li>Casa</li>
-          <li>Esportes</li>
-          <li>Beleza</li>
+      {/* Coluna Categorias */}
+      <div className="footer-section">
+        <h3 className="footer-title">Categorias</h3>
+        <ul className="footer-list">
+          <li>Camisetas</li>
+          <li>Calcas</li>
+          <li>Bonés</li>
+          <li>Headphones</li>
+          <li>Tenis</li>
         </ul>
       </div>
 
-      {/* Lado direito */}
-      <div className="p-d-flex p-flex-column p-ai-start w-20">
-        <h3>Contato</h3>
-        <p>
-          Email: contato@exemplo.com
-          <br />
-          Telefone: (11) 1234-5678
-          <br />
+      {/* Coluna Contato */}
+      <div className="footer-section">
+        <h3 className="footer-title">Contato</h3>
+        <p className="footer-contact">
+          Email: contato@exemplo.com <br />
+          Telefone: (11) 1234-5678 <br />
           Endereço: Rua Exemplo, 123, Cidade, Estado
         </p>
+      </div>
+
+      {/* Rodapé Inferior */}
+      <div className="footer-bottom">
+        <hr />
+        <p>&copy; 2024 GT3-Lucas Augusto</p>
       </div>
     </footer>
   );

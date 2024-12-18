@@ -1,77 +1,55 @@
-import "../styles.css";
-import "../variables.css";
-import React from "react";
+import React, { useState } from "react";
+import "../styles/Header.css";
 import { InputText } from "primereact/inputtext";
-import { IconField } from "primereact/iconfield";
-import { InputIcon } from "primereact/inputicon";
 import { Button } from "primereact/button";
-
-// Importação de estilos do PrimeReact
-import "primereact/resources/themes/lara-light-pink/theme.css"; // Tema Lara Light Pink
-import "primereact/resources/primereact.min.css"; // Estilos globais do PrimeReact
-import "primeicons/primeicons.css"; // Biblioteca de ícones PrimeIcons
-import "primeflex/primeflex.css"; // Classes utilitárias PrimeFlex
-
-// Importação da logo
+import { Badge } from "primereact/badge";
+import "primereact/resources/themes/lara-light-pink/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
 import logo from "../assets/logo-header.svg";
 import Navbar from "./NavBar/NavBar";
 
 const Header = () => {
-  // Lado esquerdo: Botão "Cadastre-se"
-  const singUp = (
-    <Button
-      label="Cadastre-se"
-      text
-      class="button dark-gray-3"
-      onClick={() => {}}
-    />
-  );
-
-  const login = (
-    <Button
-      label="Entrar"
-      raised
-      className="p-button-sm p-button-sm"
-      class="button-primary"
-      onClick={() => {}}
-    />
-  );
-
-  const carrinho = <InputIcon className="pi pi-cart-plus" onClick={() => {}} />;
-
-  // Lado direito: Logo
-  const start = <img src={logo} alt="Logo" class="logo" />;
-
-  // Caixa de pesquisa no centro
-  const pesquisa = (
-    <>
-      <IconField>
-        <InputIcon className="pi pi-search pi-search cursor:pointer">
-          {" "}
-        </InputIcon>
-        <InputText
-          placeholder="  Pesquisar produtos..."
-          class="pesquisarProdutos"
-        />
-      </IconField>
-    </>
-  );
+  // Simulando a quantidade de produtos no carrinho
+  const [cartCount, setCartCount] = useState(0);
 
   return (
-    <header className="overflow-hidden px-5">
-      {/* Linha superior: Botão à esquerda, pesquisa no meio, logo à direita */}
-      <div className="flex flex-row justify-content-between align-items-center p-py-4px p-px-4px">
-        {start} {/* Logo */}
-        {pesquisa} {/* Caixa de pesquisa */}
-        {singUp} {/* Botão "Cadastre-se" */}
-        {login} {/* Botão "login" */}
-        {carrinho} {/* Botão "carrinho" */}
+    <header className="header-container">
+      <div className="flex justify-content-between align-items-center header-top">
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
+        </div>
+        <div className="search-container p-input-icon-right">
+          <i className="pi pi-search" />
+          <InputText
+            placeholder="Pesquisar produtos..."
+            className="search-input"
+          />
+        </div>
+        <div className="flex align-items-center gap-3 buttons-container">
+          <Button
+            label="Cadastre-se"
+            className="p-button-text button-signup"
+            onClick={() => {}}
+          />
+          <button className="button-primary" onClick={() => {}}>
+            Entrar
+          </button>
+          <div className="cart-container">
+            <i className="pi pi-shopping-cart cart-icon" />
+            {cartCount > 0 && (
+              <Badge
+                value={cartCount}
+                className="cart-badge"
+              />
+            )}
+          </div>
+        </div>
       </div>
-
-      {/* Linha inferior: Barra de navegação */}
-      {/* <TabMenu model={navItems} />
-       */}
-      <Navbar />
+      <div className="header-bottom">
+        <Navbar />
+      </div>
     </header>
   );
 };

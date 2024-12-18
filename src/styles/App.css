@@ -1,0 +1,32 @@
+/* Importa variáveis */
+@import url("/src/variables.css");
+
+/* Reset e Body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Elementos básicos */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h3, p {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Utilitários */
+.w-20 {
+  width: 20%;
+}
+
+.RdSocial {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

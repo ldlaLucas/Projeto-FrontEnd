@@ -1,0 +1,94 @@
+/* Container Principal do Footer */
+.footer-container {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo e Descrição */
+.logo-section {
+  width: 20%;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 16px;
+}
+
+.footer-description {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Ícones das Redes Sociais */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #c92071; /* Cor primária */
+}
+
+/* Seção de Colunas */
+.footer-section {
+  width: 20%;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-list li:hover {
+  color: #c92071; /* Cor primária */
+}
+
+/* Contato */
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Linha Inferior e Texto Centralizado */
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom hr {
+  border: none;
+  border-top: 1px solid #666666;
+  margin-bottom: 8px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #cccccc;
+}

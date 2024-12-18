@@ -1,0 +1,6 @@
+
+.Section{
+  display: flex;
+  flex-wrap: wrap;  
+  position: sticky;
+}

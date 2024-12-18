@@ -1,0 +1,36 @@
+/* HomePage.css */
+
+/* Página inicial */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Seção de coleções */
+.collections-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.collection-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.collection-image:hover {
+  transform: scale(1.1);
+}
+
+Section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

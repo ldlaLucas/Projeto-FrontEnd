@@ -3,6 +3,7 @@ import ProductCard from "../components/ProductCard";
 import "../styles.css";
 
 const ProductListing = ({ products }) => {
+  
   return (
     <div className="product-listing">
       {products.map((product, index) => (

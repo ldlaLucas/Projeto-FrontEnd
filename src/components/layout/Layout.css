@@ -5,6 +5,8 @@
 .layout {
   height: 100vh;
   background-color: var(--color-gray-light-3);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */

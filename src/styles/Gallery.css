@@ -1,5 +1,5 @@
 /* Estilos do componente Gallery */
-@import url('../../variables.css');
+@import url('../variables.css');
 
 .gallery {
     position: relative;

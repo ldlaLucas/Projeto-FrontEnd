@@ -1,8 +1,8 @@
 // src/components/Gallery/Gallery.jsx
 import React, { useState } from "react";
-import "./Gallery.css";
-import fleft from "../../assets/icons/arrow-left.svg";
-import fRight from "../../assets/icons/arrow-right.svg";
+import "../styles/Gallery.css";
+import fleft from "../assets/icons/arrow-left.svg";
+import fRight from "../assets/icons/arrow-right.svg";
 
 const Gallery = ({
   className = "",
