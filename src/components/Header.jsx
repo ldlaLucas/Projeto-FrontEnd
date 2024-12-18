@@ -1,7 +1,6 @@
 import "../styles.css";
 import "../variables.css";
 import React from "react";
-import { TabMenu } from "primereact/TabMenu";
 import { InputText } from "primereact/inputtext";
 import { IconField } from "primereact/iconfield";
 import { InputIcon } from "primereact/inputicon";
@@ -15,17 +14,9 @@ import "primeflex/primeflex.css"; // Classes utilitárias PrimeFlex
 
 // Importação da logo
 import logo from "../assets/logo-header.svg";
-import Navbar from "./NavBar";
+import Navbar from "./NavBar/NavBar";
 
 const Header = () => {
-  // Configuração dos itens da barra de navegação
-  // const navItems = [
-  //   { label: "Home", command: () => (window.location.href = "/home") },
-  //   { label: "Produtos", command: () => (window.location.href = "/produtos") },
-  //   { label: "Categorias", command: () => (window.location.href = "/categorias") },
-  //   { label: "Meus Pedidos", command: () => (window.location.href = "/meus-pedidos") },
-  // ];
-
   // Lado esquerdo: Botão "Cadastre-se"
   const singUp = (
     <Button

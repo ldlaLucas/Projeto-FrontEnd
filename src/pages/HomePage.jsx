@@ -1,6 +1,5 @@
 import Section from "../components/Section/Section";
 import ProductListing from "../components/ProductListing";
-import Layout from "../components/layout/Layout";
 import "primeflex/primeflex.css";
 import Gallery from "../components/gallery/Gallery";
 
@@ -55,8 +54,7 @@ const HomePage = () => {
     },
   ];
   return (
-    <div>
-      <Layout>
+    <>
         <Gallery
           width="1440px"
           height="681px"
@@ -74,9 +72,7 @@ const HomePage = () => {
           link={{ text: "Show More", href: "https://redirect.link" }}
         />
           <ProductListing products={produtos} />
-
-    </Layout>
-    </div>
+    </>
   );
 };
 

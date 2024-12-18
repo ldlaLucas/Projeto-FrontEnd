@@ -1,9 +1,10 @@
 import React from "react";
-import Layout from "../components/layout/Layout";
-import Gallery from "../components/gallery/Gallery";
-import Section from "../components/Section/Section";
-import ProductListing from "../components/ProductListing";
-import "../pages/ProductViewPage/ProductViewPage.css"; // CSS específico para ajustes da página
+import Layout from "../../components/layout/Layout";
+import Gallery from "../../components/gallery/Gallery";
+import BuyBox from "../../components/BuyBox";
+import Section from "../../components/Section/Section";
+import ProductListing from "../../components/ProductListing";
+import "./ProductViewPage.css"; // CSS específico para ajustes da página
 
 const ProductViewPage = () => {
   // Dados fictícios para teste
@@ -39,7 +40,7 @@ const ProductViewPage = () => {
   ];
 
   return (
-    <Layout>
+    <>
       <div className="product-view-page">
         <div className="product-details-container">
           {/* Galeria */}
@@ -77,7 +78,7 @@ const ProductViewPage = () => {
           <ProductListing products={recommendedProducts} />
         </Section>
       </div>
-    </Layout>
+    </>
   );
 };
 
