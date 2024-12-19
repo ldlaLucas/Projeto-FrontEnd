@@ -25,12 +25,27 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.collection-image:hover {
+/* .collection-image:hover {
   transform: scale(1.1);
-}
+} */
 
 Section{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.category{
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.collection-category{
+ display: flex;
+ justify-content: center;
+ padding: 48px;
+ width: 720px;
+ height: 138px;
 }

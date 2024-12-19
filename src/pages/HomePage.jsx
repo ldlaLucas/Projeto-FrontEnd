@@ -2,8 +2,6 @@ import React from "react";
 import Section from "../components/Section/Section";
 import ProductListing from "../components/ProductListing";
 import Gallery from "../components/Gallery";
-
-import "primeflex/primeflex.css";
 import "../styles/HomePage.css";
 
 const HomePage = () => {
@@ -54,10 +52,9 @@ const HomePage = () => {
       priceDiscount: 349.9,
     },
   ];
-
   return (
     <div className="home-page">
-      {/* Slide de imagens */}
+      {/* Banner principal */}
       <Gallery
         width="100%"
         height="681px"
@@ -71,11 +68,7 @@ const HomePage = () => {
       />
 
       {/* Seção: Coleções em destaque */}
-      <Section
-        title="Coleções em Destaque"
-        titleAlign="center"
-        link={{ text: "Ver mais", href: "/colecoes" }}
-      >
+      <Section title="Coleções em Destaque">
         <div className="collections-container">
           <img
             src="../../public/collection-1.png"
@@ -95,10 +88,35 @@ const HomePage = () => {
         </div>
       </Section>
 
+      {/* Seção: Categorias em destaque */}
+      <Section title="Coleção em Destaque">
+        <div className="collection-category">
+          <img
+            src="../src/assets/categoryIcons/Frame-10.svg"
+            className="collection-image category"
+          />
+          <img
+            src="../src/assets/categoryIcons/Frame-11.svg"
+            className="collection-image category"
+          />
+          <img
+            src="../src/assets/categoryIcons/Frame-12.svg"
+            className="collection-image category"
+          />
+          <img
+            src="../src/assets/categoryIcons/Frame-13.svg"
+            className="collection-image category"
+          />
+          <img
+            src="../src/assets/categoryIcons/Frame-14.svg"
+            className="collection-image category"
+          />
+        </div>
+      </Section>
+
       {/* Seção: Produtos em alta */}
       <Section
         title="Produtos em Alta"
-        titleAlign="left"
         link={{ text: "Ver todos os produtos", href: "/produtos" }}
       >
         <ProductListing products={produtosAlta} />
